@@ -16,21 +16,21 @@ MAG-PM (OAG v2): https://www.aminer.org/oag2019
 ## Usage
 
 ###### Cora-CA
-python AHCKA.py --dataset cora --data coauthorship
+`python AHCKA.py --dataset cora --data coauthorship`
 
 ###### Cora-CC
-python AHCKA.py --dataset cora --data cocitation
+`python AHCKA.py --dataset cora --data cocitation`
 
 ###### Citeseer
-python AHCKA.py --dataset citeseer --data cocitation
+`python AHCKA.py --dataset citeseer --data cocitation`
 
 ###### DBLP
-python AHCKA.py --dataset dblp --data coauthorship
+`python AHCKA.py --dataset dblp --data coauthorship`
 
 *The following tests require large-scale datasets and ScaNN indices*
 
 ###### Amazon
-python AHCKA.py --dataset amazon --data npz --scale --beta 0.4 --interval 1
+`python AHCKA.py --dataset amazon --data npz --scale --beta 0.4 --interval 1`
 
 ###### MAG-PM
-python AHCKA.py --dataset magpm --data npz --scale --beta 0.4
+`python AHCKA.py --dataset magpm --data npz --scale --beta 0.4`
