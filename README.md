@@ -7,7 +7,7 @@ numpy, scipy, scikit-learn, scann
 Install with: `pip install {library_name}`
 
 ## Test large-scale datasets
-We provide links to the original data.
+Due to the file size limit of this repository, we provide links to the original data.
 
 Amazon: https://nijianmo.github.io/amazon/index.html
 
