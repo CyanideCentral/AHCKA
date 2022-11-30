@@ -174,10 +174,7 @@ def cluster(adj, X, num_cluster, deg_dict, alpha=0.2, beta = 0.35, t=5, tmax=200
         P = [sp.diags(mask)@P[0], P[1]]
     conductance_stats = []
     for i in range(tmax):
-        z_0 = config.alpha * q
-        z = z_0
-        for j in range(config.num_hop):
-            z = (1-config.alpha)*((1-beta)*P[0]@(P[1].dot(z))+ (beta)*Q.dot(z)) + z_0
+        z = (1-beta)*P[0]@(P[1].dot(q))+ (beta)*Q.dot(q)
 
         q_prev = q
         q, _ = qr(z, mode='economic')

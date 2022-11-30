@@ -15,7 +15,7 @@ p.add_argument('--dataset', type=str, default='cora', help='dataset name (e.g.: 
 p.add_argument('--tmax', type=int, default=200, help='t_max parameter')
 p.add_argument('--seeds', type=int, default=0, help='seed for randomness')
 p.add_argument('--alpha', type=float, default=0.2, help='mhc parameter')
-p.add_argument('--beta', type=float, default=0.35, help='weight of knn random walk')
+p.add_argument('--beta', type=float, default=0.5, help='weight of knn random walk')
 p.add_argument('--metric', type=bool, default=False, help='calculate additional metrics: modularity')
 p.add_argument('--weighted_p', type=int, default=0, help='use transition matrix p weighted by attribute similarity')
 p.add_argument('--verbose', action='store_true', help='print verbose logs')

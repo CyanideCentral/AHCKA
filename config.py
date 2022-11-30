@@ -14,7 +14,6 @@ weighted_p = False
 q_epsilon = 0.005
 mag_const = 1.0
 knn_k = 10
-multi_hop_obj = True
 num_hop = 3
 
 init_iter = 25
