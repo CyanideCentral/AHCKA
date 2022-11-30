@@ -7,7 +7,9 @@ numpy, scipy, scikit-learn, scann
 Install with: `pip install {library_name}`
 
 ## Test large-scale datasets
-Due to the file size limit of this repository, we provide links to the original data.
+Processed Amazon and MAG-PM datasets can be downloaded at: https://www.dropbox.com/s/y875ig3ng2ft9jr/AHCKA-data.zip?dl=0
+
+Original data can be accessed via the following links.
 
 Amazon: https://nijianmo.github.io/amazon/index.html
 
