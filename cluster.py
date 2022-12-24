@@ -208,8 +208,8 @@ def cluster(adj, X, num_cluster, deg_dict, alpha=0.2, beta = 0.35, t=5, tmax=200
             if config.cond_early_stop and early_stop(conductance_stats):
                 break
 
-        if err <= config.q_epsilon:
-            break
+            if err <= config.q_epsilon:
+                break
 
     end_time = time.time()
     peak_memory = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024.0
