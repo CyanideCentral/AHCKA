@@ -17,6 +17,9 @@ MAG-PM (OAG v2): https://www.aminer.org/oag2019
 
 ## Usage
 
+###### Query
+`python AHCKA.py --dataset query --data npz`
+
 ###### Cora-CA
 `python AHCKA.py --dataset cora --data coauthorship`
 
@@ -25,6 +28,9 @@ MAG-PM (OAG v2): https://www.aminer.org/oag2019
 
 ###### Citeseer
 `python AHCKA.py --dataset citeseer --data cocitation`
+
+###### 20News
+`python AHCKA.py --dataset 20news --data npz`
 
 ###### DBLP
 `python AHCKA.py --dataset dblp --data coauthorship`
