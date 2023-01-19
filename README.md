@@ -1,5 +1,5 @@
 # AHCKA
-Code for attributed hypergraph clustering and four datasets (in "data" folder).
+Code for attributed hypergraph clustering and six datasets (in "data" folder).
 
 ## Pre-requisites
 numpy, scipy, scikit-learn, scann
