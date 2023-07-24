@@ -1,4 +1,19 @@
-# AHCKA: Efficient and Effective Attributed Hypergraph Clustering via K-Nearest Neighbor Augmentation
+# AHCKA: Efficient and Effective Attributed Hypergraph Clustering via K-Nearest Neighbor Augmentation (SIGMOD 2023)
+
+If you use our code or data, please cite:
+
+    @article{LiYS23,
+      author       = {Yiran Li and
+                      Renchi Yang and
+                      Jieming Shi},
+      title        = {Efficient and Effective Attributed Hypergraph Clustering via K-Nearest
+                      Neighbor Augmentation},
+      journal      = {Proc. {ACM} Manag. Data},
+      volume       = {1},
+      number       = {2},
+      pages        = {116:1--116:23},
+      year         = {2023}
+    }
 
 This repository contains the implementation of AHCKA algorithm for attributed hypergraph clustering and the eight datasets used in our experiments.
 
@@ -44,17 +59,4 @@ MAG-PM (OAG v2): https://www.aminer.org/oag2019
 ###### MAG-PM
 `python AHCKA.py --dataset magpm --data npz --scale --beta 0.4`
 
-## Citation
 
-Welcome to cite our SIGMOD '23 paper if you find this repository helpful.
-
-    @article{li2023efficient,
-      title={Efficient and Effective Attributed Hypergraph Clustering via K-Nearest Neighbor Augmentation},
-      author={Li, Yiran and Yang, Renchi and Shi, Jieming},
-      journal={Proceedings of the ACM on Management of Data},
-      volume={1},
-      number={2},
-      pages={1--23},
-      year={2023},
-      publisher={ACM New York, NY, USA}
-    }
