@@ -1,5 +1,7 @@
 # AHCKA: Efficient and Effective Attributed Hypergraph Clustering via K-Nearest Neighbor Augmentation (SIGMOD 2023)
 
+[Link to our paper](https://dl.acm.org/doi/abs/10.1145/3589261)
+
 If you use our code or data, please cite:
 
     @article{LiYS23,
