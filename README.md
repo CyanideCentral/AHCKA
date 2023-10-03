@@ -85,4 +85,7 @@ To **reproduce** the results in our paper, please use the following commands for
 ###### MAG-PM
 `python AHCKA.py --dataset magpm --data npz --scale --beta 0.4`
 
-
+Sample output on Cora co-authorship dataset:
+```
+Acc=0.651 F1=0.608 NMI=0.462 ARI=0.406 Time=0.470s RAM=221MB
+```
