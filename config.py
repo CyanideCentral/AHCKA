@@ -10,7 +10,6 @@ seeds = 0
 alpha = 0.2
 beta = 0.5
 tmax = 1000
-weighted_p = False
 q_epsilon = 0.005
 mag_const = 1.0
 knn_k = 10

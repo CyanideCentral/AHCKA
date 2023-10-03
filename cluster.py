@@ -106,7 +106,7 @@ class clustering_metrics():
 
         return acc, nmi, f1, pre, adjscore, rc
 
-def cluster(adj, X, num_cluster, deg_dict, alpha=0.2, beta = 0.35, t=5, tmax=200, ri=False, weighted_p=0):
+def cluster(adj, X, num_cluster, deg_dict, alpha=0.2, beta = 0.35, t=5, tmax=200, ri=False):
     n = config.hg_adj.shape[1]
 
     start_time = time.time()
@@ -221,5 +221,5 @@ def cluster(adj, X, num_cluster, deg_dict, alpha=0.2, beta = 0.35, t=5, tmax=200
     cm = clustering_metrics(config.labels, predict_clusters_best)
     acc, nmi, f1, pre, adj_s, rec = cm.evaluationClusterModelFromLabel()
 
-    print(f"{acc} {f1} {nmi} {adj_s} {end_time-start_time} {peak_memory}")
+    print(f"Acc={acc:.3f} F1={f1:.3f} NMI={nmi:.3f} ARI={adj_s:.3f} Time={end_time-start_time:.3f}s RAM={int(peak_memory)}MB")
     return [acc, nmi, f1, adj_s, end_time-start_time, peak_memory]

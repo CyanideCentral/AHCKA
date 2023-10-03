@@ -16,8 +16,9 @@ p.add_argument('--tmax', type=int, default=200, help='t_max parameter')
 p.add_argument('--seeds', type=int, default=0, help='seed for randomness')
 p.add_argument('--alpha', type=float, default=0.2, help='mhc parameter')
 p.add_argument('--beta', type=float, default=0.5, help='weight of knn random walk')
+p.add_argument('--knnk', type=int, default=10, help='K for KNN graph construction')
 p.add_argument('--metric', type=bool, default=False, help='calculate additional metrics: modularity')
-p.add_argument('--weighted_p', type=int, default=0, help='use transition matrix p weighted by attribute similarity')
+p.add_argument('--rd_init', action='store_true', help='initialize cluster labels randomly')
 p.add_argument('--verbose', action='store_true', help='print verbose logs')
 p.add_argument('--scale', action='store_true', help='use configurations for large-scale data')
 p.add_argument('--interval', type=int, default=5, help='interval between cluster predictions during orthogonal iterations')
@@ -46,7 +47,7 @@ def run_ahcka():
     p_mat = (normalize(hg_adj.T, norm='l1', axis=1),  normalize(hg_adj, norm='l1', axis=1))
 
     results = None
-    results = cluster(hg_adj, features, k, deg_dict, alpha=config.alpha, beta=config.beta, tmax=config.tmax, ri=False, weighted_p=config.weighted_p)
+    results = cluster(hg_adj, features, k, deg_dict, alpha=config.alpha, beta=config.beta, tmax=config.tmax, ri=False)
 
     return results
 
@@ -60,6 +61,8 @@ if __name__ == '__main__':
     config.seeds = args.seeds
     config.verbose = args.verbose
     config.cluster_interval = args.interval
+    config.knn_k = args.knnk
+    config.random_init = args.rd_init
     if args.scale:
         config.approx_knn = True
         config.init_iter = 1
