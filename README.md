@@ -41,7 +41,7 @@ To run AHCKA clustering algorithm on a dataset, please specify the type of datas
 |-------------------------------------------|:------------:|:--------------------------:|
 | Co-authorship hypergraph in .pickle files | coauthorship |         cora, dblp         |
 | Co-citation hypergraph in .pickle files   |  cocitation  |       cora, citeseer       |
-| Attributed hypergraph stored in .npz file |      npz     | query, 20news, amazon, mag |
+| Attributed hypergraph stored in .npz file |      npz     | query, 20news, amazon, magpm |
 
 Other parameters are optional:
 
