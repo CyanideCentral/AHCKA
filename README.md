@@ -25,7 +25,7 @@ numpy, scipy, scikit-learn, scann
 Install with: `pip install {library_name}`
 
 ### Optional: large-scale datasets
-Processed Amazon and MAG-PM datasets, with constructed ScaNN indices, can be downloaded at: https://www.dropbox.com/s/y875ig3ng2ft9jr/AHCKA-data.zip?dl=0
+Processed Amazon and MAG-PM datasets, with constructed ScaNN indices, can be downloaded at: https://zenodo.org/records/10035761
 
 Original Amazon and MAG data can be accessed via the following links.
 
